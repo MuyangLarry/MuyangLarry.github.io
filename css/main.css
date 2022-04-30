@@ -227,6 +227,14 @@ body {
   min-height: 100%;
   position: relative;
   transition: padding 0.2s ease-in-out;
+  overflow-x: hidden;
+  width: 100vw;
+  overflow-y: scroll;
+}
+@supports (overflow-x: clip) {
+  body {
+    overflow-x: clip;
+  }
 }
 h1,
 h2,
@@ -2284,6 +2292,10 @@ pre code {
 .post-reward div span {
   display: block;
 }
+.post-reward div:hover span {
+  animation: next-roll 0.1s infinite linear;
+  pointer-events: none;
+}
 .post-reward img {
   display: inline-block;
   margin: 0.8em 2em 0;
@@ -2694,6 +2706,24 @@ mark.search-keyword {
   border-bottom: 1px dashed #ff2a2a;
   color: #ff2a2a;
   font-weight: bold;
+}
+.popular-posts-header {
+  border-bottom: 1px solid #eee;
+  font-size: 1.125em;
+  margin-bottom: 10px;
+  margin-top: 60px;
+}
+.popular-posts {
+  padding: 0;
+}
+.popular-posts .popular-posts-item {
+  margin-left: 2em;
+}
+.popular-posts .popular-posts-item .popular-posts-title {
+  font-size: 0.875em;
+  font-weight: normal;
+  line-height: 2.4;
+  margin: 0;
 }
 .use-motion .animated {
   animation-fill-mode: none;
