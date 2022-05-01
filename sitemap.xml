@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://muyanglarry.github.io/tags/</loc>
+    
+    <lastmod>2022-05-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://muyanglarry.github.io/2022/04/24/%E8%8B%B9%E6%9E%9C%E5%8F%91%E5%B8%83%E4%BC%9A/</loc>
     
     <lastmod>2022-05-01</lastmod>
@@ -48,15 +57,6 @@
   
   <url>
     <loc>https://muyanglarry.github.io/2022/04/24/MIUI%2013/</loc>
-    
-    <lastmod>2022-05-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://muyanglarry.github.io/tags/</loc>
     
     <lastmod>2022-05-01</lastmod>
     
@@ -124,6 +124,13 @@
   </url>
   
   <url>
+    <loc>https://muyanglarry.github.io/tags/%E7%A1%AC%E4%BB%B6%E6%B5%8B%E8%AF%84/</loc>
+    <lastmod>2022-05-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://muyanglarry.github.io/tags/%E6%AC%A2%E8%BF%8E/</loc>
     <lastmod>2022-05-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -132,13 +139,6 @@
   
   <url>
     <loc>https://muyanglarry.github.io/tags/%E9%9A%8F%E8%AE%B0/</loc>
-    <lastmod>2022-05-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://muyanglarry.github.io/tags/%E7%A1%AC%E4%BB%B6%E6%B5%8B%E8%AF%84/</loc>
     <lastmod>2022-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -161,14 +161,14 @@
   </url>
   
   <url>
-    <loc>https://muyanglarry.github.io/categories/%E5%85%B6%E4%BB%96/</loc>
+    <loc>https://muyanglarry.github.io/categories/%E6%95%B0%E7%A0%81/</loc>
     <lastmod>2022-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://muyanglarry.github.io/categories/%E6%95%B0%E7%A0%81/</loc>
+    <loc>https://muyanglarry.github.io/categories/%E5%85%B6%E4%BB%96/</loc>
     <lastmod>2022-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
