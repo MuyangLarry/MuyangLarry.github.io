@@ -6,3 +6,5 @@ This is my personal blog sourse code.
 - English: [https://muyanglarry.github.io](https://muyanglarry.github.io)
 - Chinese: [https://muyanglarry.github.io/zh-CN/](https://muyanglarry.github.io/zh-CN/)
 Farewell!
+
+This blog used the hexo framework and used themes.
