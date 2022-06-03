@@ -25,7 +25,7 @@
   <!-- Custom Files headBegin begin-->
   
   <!-- Custom Files headBegin end-->
-  <link rel="preload" href="/css/style.311803bb.css" as="style">
+  <link rel="preload" href="/css/style.fc18ca9d.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1649552113628/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1649552113628/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -273,103 +273,6 @@ button {
   position: relative;
   overflow: hidden;
   margin-bottom: -100px;
-}
-.cover-wrapper .cover-bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-}
-.cover-wrapper .cover-bg.lazyload:not(.loaded) {
-  opacity: 0;
-  -webkit-opacity: 0;
-  -moz-opacity: 0;
-}
-.cover-wrapper .cover-bg.lazyload.loaded {
-  animation-delay: 0s;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-  animation-name: fadeIn;
-}
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -khtml-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -khtml-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -khtml-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -khtml-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
 }
 .cover-wrapper .cover-body {
   z-index: 1;
@@ -719,6 +622,337 @@ button {
   -webkit-opacity: 1;
   -moz-opacity: 1;
   border-bottom: 2px solid var(--color-site-inner);
+}
+.cover-wrapper.dock .menu,
+.cover-wrapper.featured .menu,
+.cover-wrapper.focus .menu {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+.cover-wrapper.dock .menu .list-h a,
+.cover-wrapper.featured .menu .list-h a,
+.cover-wrapper.focus .menu .list-h a {
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  line-height: 24px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-bottom: none;
+  text-align: center;
+  align-content: flex-end;
+  color: rgba(68,68,68,0.7);
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 500px) {
+  .cover-wrapper.dock .menu .list-h a,
+  .cover-wrapper.featured .menu .list-h a,
+  .cover-wrapper.focus .menu .list-h a {
+    padding: 12px 8px;
+  }
+}
+.cover-wrapper.dock .menu .list-h a i,
+.cover-wrapper.featured .menu .list-h a i,
+.cover-wrapper.focus .menu .list-h a i {
+  margin: 8px;
+}
+.cover-wrapper.dock .menu .list-h a p,
+.cover-wrapper.featured .menu .list-h a p,
+.cover-wrapper.focus .menu .list-h a p {
+  font-size: 0.875rem;
+}
+.cover-wrapper.dock .menu .list-h a.active,
+.cover-wrapper.featured .menu .list-h a.active,
+.cover-wrapper.focus .menu .list-h a.active {
+  background: var(--color-card);
+  backdrop-filter: none;
+}
+.cover-wrapper.dock .menu .list-h a.active i,
+.cover-wrapper.featured .menu .list-h a.active i,
+.cover-wrapper.focus .menu .list-h a.active i,
+.cover-wrapper.dock .menu .list-h a.active i+p,
+.cover-wrapper.featured .menu .list-h a.active i+p,
+.cover-wrapper.focus .menu .list-h a.active i+p {
+  color: #3dd9b6;
+}
+.cover-wrapper.dock .menu .list-h a.active img+p,
+.cover-wrapper.featured .menu .list-h a.active img+p,
+.cover-wrapper.focus .menu .list-h a.active img+p {
+  color: var(--color-text);
+}
+.cover-wrapper.dock .menu .list-h a:hover,
+.cover-wrapper.featured .menu .list-h a:hover,
+.cover-wrapper.focus .menu .list-h a:hover {
+  background: var(--color-card);
+}
+.cover-wrapper.dock .top {
+  margin-bottom: 48px;
+}
+.cover-wrapper.dock .menu {
+  background: rgba(255,255,255,0.5);
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+}
+.cover-wrapper.dock .menu .list-h {
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -khtml-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -o-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  margin: 4px;
+}
+.cover-wrapper.dock .menu .list-h a+a {
+  margin-left: 4px;
+}
+@media screen and (max-width: 500px) {
+  .cover-wrapper.dock .menu .list-h {
+    overflow-x: scroll;
+  }
+  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-track-piece {
+    background: transparent;
+  }
+  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb {
+    background: #3dd9b6;
+    cursor: pointer;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+  }
+  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb:hover {
+    background: #ff5722;
+  }
+}
+@supports (backdrop-filter: blur(20px)) {
+  .cover-wrapper.dock .menu {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: saturate(200%) blur(20px);
+  }
+}
+.cover-wrapper #parallax-window {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+.parallax-mirror {
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-name: fadeIn;
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-mode: 'dark';
+  }
+  :root:not([color-scheme]) {
+    --color-site-body: #121212;
+    --color-read-bkg: #1f1f1f;
+    --color-read-post: #262626;
+    --color-site-bg: #1f1f1f;
+    --color-site-inner: rgba(238,238,238,0.871);
+    --color-site-footer: rgba(170,170,170,0.871);
+    --color-card: #262626;
+    --color-text: rgba(238,238,238,0.871);
+    --color-block: #434343;
+    --color-codeblock: #1f1f1f;
+    --color-inlinecode: #d56d28;
+    --color-h1: rgba(255,255,255,0.871);
+    --color-h2: rgba(255,255,255,0.871);
+    --color-h3: rgba(255,255,255,0.6);
+    --color-h4: rgba(255,255,255,0.6);
+    --color-h5: rgba(255,255,255,0.6);
+    --color-h6: rgba(255,255,255,0.6);
+    --color-p: rgba(217,217,217,0.871);
+    --color-list: rgba(217,217,217,0.871);
+    --color-list-hl: #63e0c4;
+    --color-meta: rgba(191,191,191,0.871);
+    --color-link: rgba(191,191,191,0.871);
+  }
+  :root:not([color-scheme]) img {
+    filter: brightness(80%) !important;
+  }
+  :root:not([color-scheme]) .blur {
+    background: rgba(31,31,31,0.9) !important;
+  }
+  :root:not([color-scheme]) .white-box.blur {
+    background: rgba(38,38,38,0.9) !important;
+  }
+  :root:not([color-scheme]) .nav-main .u-search-input {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) #l_main .article .prev-next>a {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) #l_main .article .prev-next>a:hover {
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) .article blockquote {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .article-title a {
+    color: var(--color-h1) !important;
+  }
+  :root:not([color-scheme]) details>summary {
+    color: var(--color-p) !important;
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) details {
+    border: 1px solid var(--color-site-bg) !important;
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) #u-search .modal,
+  :root:not([color-scheme]) #u-search .modal-header,
+  :root:not([color-scheme]) #u-search .modal-body {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) #u-search .modal-body .modal-results .result:hover {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .u-search-input:hover {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .u-search-input:focus {
+    background: var(--color-site-body) !important;
+  }
+}
+[color-scheme='dark'] {
+  --color-site-body: #121212;
+  --color-read-bkg: #1f1f1f;
+  --color-read-post: #262626;
+  --color-site-bg: #1f1f1f;
+  --color-site-inner: rgba(238,238,238,0.871);
+  --color-site-footer: rgba(170,170,170,0.871);
+  --color-card: #262626;
+  --color-text: rgba(238,238,238,0.871);
+  --color-block: #434343;
+  --color-codeblock: #1f1f1f;
+  --color-inlinecode: #d56d28;
+  --color-h1: rgba(255,255,255,0.871);
+  --color-h2: rgba(255,255,255,0.871);
+  --color-h3: rgba(255,255,255,0.6);
+  --color-h4: rgba(255,255,255,0.6);
+  --color-h5: rgba(255,255,255,0.6);
+  --color-h6: rgba(255,255,255,0.6);
+  --color-p: rgba(217,217,217,0.871);
+  --color-list: rgba(217,217,217,0.871);
+  --color-list-hl: #63e0c4;
+  --color-meta: rgba(191,191,191,0.871);
+  --color-link: rgba(191,191,191,0.871);
+}
+[color-scheme='dark'] img {
+  filter: brightness(80%) !important;
+}
+[color-scheme='dark'] .blur {
+  background: rgba(31,31,31,0.9) !important;
+}
+[color-scheme='dark'] .white-box.blur {
+  background: rgba(38,38,38,0.9) !important;
+}
+[color-scheme='dark'] .nav-main .u-search-input {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] #l_main .article .prev-next>a {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] #l_main .article .prev-next>a:hover {
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] .article blockquote {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .article-title a {
+  color: var(--color-h1) !important;
+}
+[color-scheme='dark'] details>summary {
+  color: var(--color-p) !important;
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] details {
+  border: 1px solid var(--color-site-bg) !important;
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] #u-search .modal,
+[color-scheme='dark'] #u-search .modal-header,
+[color-scheme='dark'] #u-search .modal-body {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] #u-search .modal-body .modal-results .result:hover {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .u-search-input:hover {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .u-search-input:focus {
+  background: var(--color-site-body) !important;
+}
+@media screen and (max-width: 500px) {
+  [color-scheme='dark'] .l_header .m_search {
+    background: var(--color-site-bg) !important;
+  }
 }
 @font-face {
   font-family: 'UbuntuMono';
@@ -1556,10 +1790,21 @@ ul.list-v >li>a:hover {
     padding: 0px;
   }
 }
+@media screen and (prefers-color-scheme: dark) and (max-width: 500px) {
+  .l_header .m_search {
+    background: var(--color-site-bg) !important;
+  }
+}
 
   </style>
-  <link rel="stylesheet" href="/css/style.311803bb.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.311803bb.css"></noscript>
+  <link rel="stylesheet" href="/css/style.fc18ca9d.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.fc18ca9d.css"></noscript>
+    <script>
+      let userColorScheme=localStorage.getItem("color-scheme")
+      if(userColorScheme){
+        document.documentElement.setAttribute("color-scheme", userColorScheme);
+      }
+    </script>
   
 <script>
 if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
@@ -1631,9 +1876,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.cd02aa19.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.311803bb.css"}},
-    default: {"avatar":"/images/avatar.png","link":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1654256215922),
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.cd02aa19.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.fc18ca9d.css"}},
+    default: {"avatar":"/images/avatar.png","link":"/images/avatar.png","cover":"/images/avatar.png","image":"/images/avatar.png"},
+    lastupdate: new Date(1654258884027),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -1653,7 +1898,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       fancybox: {"css":"https://unpkg.com/volantis-static@0.0.1649552113628/libs/@fancyapps/ui/dist/fancybox.css","js":"https://unpkg.com/volantis-static@0.0.1649552113628/libs/@fancyapps/ui/dist/fancybox.umd.js"},
       aplayer: {
         id: 3175833810,
-        enable:null
+        enable:true
       },
       rightmenu: {
         faicon: "fa",
@@ -2041,7 +2286,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     img.onerror = null;
   }
   function errorImgCover(img) {
-    img.src = "https://unpkg.com/volantis-static@0.0.1649552113628/media/placeholder/cover/76b86c0226ffd.svg";
+    img.src = "/images/avatar.png";
     img.onerror = null;
   }
   /******************************************************************************/
@@ -2076,7 +2321,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/Logo-NavBar@3x.png'/>
+            <img no-lazy class='logo' src='/images/avatar.png'/>
           
           
             <i class='/images/avatar.png'></i>
@@ -2332,10 +2577,72 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  blank' style="display: ;">
+      <div id="half" class='cover-wrapper  dock' style="display: ;">
         
-  <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
+  <div id="parallax-window"></div>
 
+<div class='cover-body'>
+  <div class='top'>
+    
+    
+      <p class="title">MuyangLarry</p>
+    
+    
+      <p class="subtitle">Nice to meet you!</p>
+    
+  </div>
+  <div class='bottom'>
+    <div class='menu navigation'>
+      <div class='list-h'>
+        
+          
+            <a href="/v4/getting-started/"
+              
+              
+              active-action="action-v4getting-started">
+              <img src='https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f5c3.svg'><p>文档</p>
+            </a>
+          
+            <a href="/faqs/"
+              
+              
+              active-action="action-faqs">
+              <img src='https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f516.svg'><p>帮助</p>
+            </a>
+          
+            <a href="/examples/"
+              
+              
+              active-action="action-examples">
+              <img src='https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f396.svg'><p>示例</p>
+            </a>
+          
+            <a href="/contributors/"
+              
+              
+              active-action="action-contributors">
+              <img src='https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f389.svg'><p>社区</p>
+            </a>
+          
+            <a href="/archives/"
+              
+              
+              active-action="action-archives">
+              <img src='https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f4f0.svg'><p>博客</p>
+            </a>
+          
+            <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/"
+              
+              
+              active-action="action-https:githubcomvolantis-xhexo-theme-volantis">
+              <img src='https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f9ec.svg'><p>源码</p>
+            </a>
+          
+        
+      </div>
+    </div>
+  </div>
+</div>
 
         <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
       </div>
@@ -2396,6 +2703,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='meta-v3' line_style='solid'>
       <div>
         
+          
+          <a class='avatar' href='/about/'><img src='https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png">
+            <meta itemprop="name" content="MuyangLarry">
+            <meta itemprop="url" content="/about/">
+          </span>
+        
         <time itemprop="dateCreated datePublished" datetime="2022-04-23T19:33:07+08:00">2022-04-23</time>
         
           <span class="dot"></span>
@@ -2442,14 +2757,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='content'>
     
       
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://unpkg.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/Logo-NavBar@3x.png'/>
+        <a class='avatar flat-box circle' href='/about/'>
+          <img no-lazy src='/images/avatar.png'/>
         </a>
       
     
     
       <div class='text'>
         
+          <h2>MuyangLarry</h2>
+        
+        
+          <p>avatar</p>
+
         
         
           <p><span id="jinrishici-sentence">MuyangLarry's Personal Blog</span></p>
@@ -2639,6 +2959,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="aplayer-container">
           
 
+  
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='false'
+      volume='0.7'
+      loop='all'
+      order='list'
+      fixed='false'
+      list-max-height='320px'
+      server='netease'
+      type='playlist'
+      id='3175833810'
+      list-folded='true'>
+    </meting-js>
+  
+
 
         </div>
       
@@ -2676,7 +3012,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         <div class='copyright'>
-        <p><a href="/">Copyright © since 2017 XXX</a></p>
+        <p><a href="/">Copyright © since 2021 XXX</a></p>
 
         </div>
       
@@ -2709,16 +3045,224 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.css("https://unpkg.com/volantis-static@0.0.1649552113628/libs/@fortawesome/fontawesome-free/css/all.min.css");
   
   
+  volantis.css("https://unpkg.com/volantis-static@0.0.1649552113628/libs/font-awesome-animation/font-awesome-animation.min.css");
+  
+  
+  volantis.css("https://unpkg.com/volantis-static@0.0.1649552113628/libs/node-waves/dist/waves.min.css");
   
 </script>
 
 <!-- required -->
+
+  
+<script src="https://unpkg.com/volantis-static@0.0.1649552113628/libs/jquery/dist/jquery.min.js"></script>
+
 
 
 <!-- internal -->
 
 <script src="/js/app.af2d54c8.js"></script>
 
+
+
+  
+  
+  
+  <div id="rightmenu-wrapper">
+    <ul class="list-v rightmenu" id="rightmenu-content">
+      <li class='navigation menuNavigation-Content'>
+        <a class='nav icon-only fix-cursor-default' onclick='history.back()'><i class='fa fa-arrow-left fa-fw'></i></a>
+        <a class='nav icon-only fix-cursor-default' onclick='history.forward()'><i class='fa fa-arrow-right fa-fw'></i></a>
+        <a class='nav icon-only fix-cursor-default' onclick='window.location.reload()'><i class='fa fa-redo fa-fw'></i></a>
+        <a class='nav icon-only fix-cursor-default' href='/'><i class='fa fa-home fa-fw'></i></a>
+      </li>
+      <li class='option menuOption-Content'>
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copyText'>
+          
+          <i class='fa fa-copy fa-fw'></i> Copy Text
+        </span>
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copyPaste'>
+          
+          <i class='fa fa-paste fa-fw mR12'></i> 粘贴文本
+        </span>
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copySelect'>
+          
+          <i class='fa fa-object-ungroup fa-fw mR12'></i> 全选文本
+        </span>
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copyCut'>
+          
+          <i class='fa fa-cut fa-fw mR12'></i> 剪切文本
+        </span>
+        
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='searchWord'>
+          
+          <i class='fa fa-search fa-fw'></i> Site Search
+        </span>
+        
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='openTab'>
+          
+          <i class='fa fa-external-link-square-alt fa-fw mR12'></i> Open Link in New Tab
+        </span>
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copySrc'>
+          
+          <i class='fa fa-image fa-fw mR12'></i> Copy Image Link
+        </span>
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copyImg'>
+          
+          <i class='fa fa-images fa-fw mR12'></i> 复制图片文件
+        </span>
+      </li>
+      
+        
+      
+        
+          <hr class="menuLoad-Content">
+        
+      
+        
+          
+    <li class="menuLoad-Content">
+      <a class='vlts-menu fix-cursor-default' href=https://volantis.js.org/faqs/
+        
+        
+        
+        
+          id="https:volantisjsorgfaqs"
+        
+      >
+        <i class='fa fa-question fa-fw'></i> 常见问题
+      </a>
+    </li>
+  
+        
+      
+        
+          
+    <li class="menuLoad-Content">
+      <a class='vlts-menu fix-cursor-default' href=https://volantis.js.org/examples/
+        
+        
+        
+        
+          id="https:volantisjsorgexamples"
+        
+      >
+        <i class='fa fa-rss fa-fw'></i> 示例博客
+      </a>
+    </li>
+  
+        
+      
+        
+          
+    <li class="menuLoad-Content">
+      <a class='vlts-menu fix-cursor-default' href=https://volantis.js.org/contributors/
+        
+        
+        
+        
+          id="https:volantisjsorgcontributors"
+        
+      >
+        <i class='fa fa-fan fa-spin fa-fw'></i> 加入社区
+      </a>
+    </li>
+  
+        
+      
+        
+          <hr class="menuLoad-Content">
+        
+      
+        
+          
+    <li class="menuLoad-Content">
+      <a class='vlts-menu fix-cursor-default' href=https://github.com/volantis-x/volantis-docs/
+        
+        
+        
+        
+          id="https:githubcomvolantis-xvolantis-docs"
+        
+      >
+        <i class='fa fa-code-branch fa-fw'></i> 本站源码
+      </a>
+    </li>
+  
+        
+      
+        
+          
+    <li class="menuLoad-Content">
+      <a class='vlts-menu fix-cursor-default' href=https://github.com/volantis-x/hexo-theme-volantis/
+        
+        
+        
+        
+          id="https:githubcomvolantis-xhexo-theme-volantis"
+        
+      >
+        <i class='fa fa-code-branch fa-fw'></i> 主题源码
+      </a>
+    </li>
+  
+        
+      
+        
+          <hr class="menuLoad-Content">
+        
+      
+        
+          <li class='option menuOption-Content'>
+            <span class='vlts-menu opt fix-cursor-default' id='printHtml'>
+              <i class='fa fa-print fa-fw '></i> 打印页面
+            </span>
+          </li>
+        
+      
+        
+          <li class='option menuOption-Content'>
+            <span class='vlts-menu opt fix-cursor-default toggle-mode-btn' id='menuDarkBtn'>
+              <i class='fa fa-moon fa-fw '></i> 暗黑模式
+            </span>
+          </li>
+        
+      
+        
+          <li class='option menuOption-Content'>
+            <span class='vlts-menu opt fix-cursor-default' id='readingModel'>
+              <i class='fa fa-book-open fa-fw '></i> 阅读模式
+            </span>
+          </li>
+        
+      
+        
+          <div id="menuMusic">
+            <li class='music name menuOption-Content'>
+              <p class='nav music-title fix-cursor-default'></p>
+            </li>
+            <li class='music ctrl'>
+              <a class='nav icon-only backward fix-cursor-default' href="/" onclick="return false;" title="backward"><i class='fa fa-step-backward fa-fw'></i></a>
+              <a class='nav icon-only toggle fix-cursor-default' href="/" onclick="return false;" title="toggle"><i class='fa fa-play fa-fw'></i></a>
+              <a class='nav icon-only forward fix-cursor-default' href="/" onclick="return false;" title="forward"><i class='fa fa-step-forward fa-fw'></i></a>
+            </li>
+            <li class='music volume'>
+              <div class='nav volume'>
+                <div class="aplayer-volume-bar-wrap">
+                  <div class="aplayer-volume-bar fix-cursor-pointer">
+                    <div class="aplayer-volume"></div>
+                    <i class='left fa fa-volume-off fa-fw'></i>
+                    <i class='right fa fa-volume-up fa-fw'></i>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </div>
+        
+      
+    </ul>
+  </div>
+  <script>volantis.js('/js/plugins/rightMenu.d9437285.js')</script>
 
 
 
@@ -3078,6 +3622,122 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- rightmenu要在darkmode之前（ToggleButton） darkmode要在comments之前（volantis.dark.push）-->
 
+  <script>
+const rootElement = document.documentElement;
+const darkModeStorageKey = "color-scheme";
+const rootElementDarkModeAttributeName = "color-scheme";
+const setLS = (k, v) => {
+    localStorage.setItem(k, v);
+};
+const removeLS = (k) => {
+    localStorage.removeItem(k);
+};
+const getLS = (k) => {
+    return localStorage.getItem(k);
+};
+const getModeFromCSSMediaQuery = () => {
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+};
+const resetRootDarkModeAttributeAndLS = () => {
+  rootElement.removeAttribute(rootElementDarkModeAttributeName);
+  removeLS(darkModeStorageKey);
+};
+const validColorModeKeys = {
+  dark: true,
+  light: true,
+};
+const applyCustomDarkModeSettings = (mode) => {
+  const currentSetting = mode || getLS(darkModeStorageKey);
+  getCustomDarkMode();
+  if (currentSetting === getModeFromCSSMediaQuery()) {
+    resetRootDarkModeAttributeAndLS();
+  } else if (validColorModeKeys[currentSetting]) {
+    rootElement.setAttribute(rootElementDarkModeAttributeName, currentSetting);
+  } else {
+    resetRootDarkModeAttributeAndLS();
+  }
+};
+const invertDarkModeObj = {
+  dark: "light",
+  light: "dark",
+};
+/**
+ * get target mode
+ */
+ const getCustomDarkMode = () => {
+  let currentSetting = getLS(darkModeStorageKey);
+  if (validColorModeKeys[currentSetting]) {
+    currentSetting = invertDarkModeObj[currentSetting];
+  } else if (currentSetting === null) {
+    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
+  } else {
+    return;
+  }
+  if(currentSetting=="dark"){
+    volantis.dark.mode="light";
+  }else{
+    volantis.dark.mode="dark";
+  }
+  // console.log(volantis.dark.mode)
+};
+const toggleCustomDarkMode = () => {
+  let currentSetting = getLS(darkModeStorageKey);
+  if (validColorModeKeys[currentSetting]) {
+    currentSetting = invertDarkModeObj[currentSetting];
+  } else if (currentSetting === null) {
+    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
+  } else {
+    return;
+  }
+  setLS(darkModeStorageKey, currentSetting);
+  return currentSetting;
+};
+/**
+ * 暗黑模式触发器
+ */
+volantis.dark.toggle=()=>{
+  const mode = toggleCustomDarkMode();
+  applyCustomDarkModeSettings(mode);
+  // 使用 volantis.dark.push 方法传入volantis.dark.toggle回调函数 参见layout/_partial/scripts/global.ejs
+  volantis.dark.method.toggle.start();
+}
+/**
+ * bind event for toggle button
+ */
+
+function bindToggleButton() {
+  var btn= document.querySelectorAll("#wrapper .toggle-mode-btn,#rightmenu-wrapper .toggle-mode-btn")
+  btn.forEach(function (e) {
+    volantis.dom.$(e).on('click',volantis.dark.toggle);
+  })
+}
+applyCustomDarkModeSettings();
+document.addEventListener("DOMContentLoaded", ()=>{
+  volantis.requestAnimationFrame(bindToggleButton)
+});
+volantis.pjax.push(bindToggleButton);
+
+const darkModelListeners={
+  dark:(mediaQueryList )=>{
+    if(mediaQueryList.matches){
+      volantis.dark.mode = "dark";
+    }
+    volantis.dark.method.toggle.start();
+  },
+  light:(mediaQueryList)=>{
+    if(mediaQueryList.matches){
+      volantis.dark.mode = "light";
+    }
+    volantis.dark.method.toggle.start();
+  }
+}
+window.matchMedia('(prefers-color-scheme: dark)').addListener(darkModelListeners.dark)
+window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListeners.light)
+</script>
+
+
 
 
 <script>
@@ -3183,6 +3843,82 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
+
+
+  <script>
+  volantis.css("https://unpkg.com/volantis-static@0.0.1649552113628/libs/aplayer/dist/APlayer.min.css");
+  (async () => {
+    // APlayer 需要在  MetingJS 之前加载
+    await volantis.js("https://unpkg.com/volantis-static@0.0.1649552113628/libs/aplayer/dist/APlayer.min.js")
+    await volantis.js("https://unpkg.com/volantis-static@0.0.1649552113628/libs/meting/dist/Meting.min.js")
+  
+    // 右键 music 需要在 APlayer  MetingJS 之后加载
+    await volantis.js('/js/plugins/aplayer.dbe5eea9.js')
+  
+  })();
+
+  function SetAPlayerPlugin(){
+    let Metings = document.querySelectorAll('meting-js');
+    if (Metings.length === 0) {return;};
+    if (Metings[0].aplayer && Metings[0].aplayer.on) {
+      // improve the accessibility https://web.dev/button-name/
+      document.querySelectorAll(".aplayer-icon-menu").forEach(e=>{
+        e.setAttribute("aria-label","Aplayer Menu")
+      })
+      // message see: /layout/_plugins/message/script.ejs
+      
+        try {
+          setTimeout(() => {
+            Metings.forEach((item, index) => {
+              const aplayerItem = item.aplayer; if(!aplayerItem) return;
+              const rightAplayerCheck = 'true' === 'true'
+                && item.meta.id === '3175833810';
+              if(rightAplayerCheck) RightMenuAplayer.checkAPlayer();
+              if(aplayerItem.events.events.play.every(item => {return item.name !== 'messagePlay'})) {
+                aplayerItem.on('play', function messagePlay() {
+                  let index = aplayerItem.list.index;
+                  let title = aplayerItem.list.audios[index].title;
+                  let artist = aplayerItem.list.audios[index].artist;
+                  setTimeout(() => {
+                    VolantisApp.message('音乐通知', title + ' - ' + artist, {
+                      icon: 'fa-solid fa-play',
+                      transitionIn: 'flipInX',
+                      transitionOut: 'flipOutX'
+                    });
+                  }, 100)
+                });
+              }
+              if(aplayerItem.events.events.pause.every(item => {return item.name !== 'messagePause'})) {
+                aplayerItem.on('pause', function messagePause() {
+                  let index = aplayerItem.list.index;
+                  let title = aplayerItem.list.audios[index].title;
+                  let artist = aplayerItem.list.audios[index].artist;
+                  setTimeout(() => {
+                    // 歌曲播放结束也会触发 pause 事件，为了避免错误提示，等待一会儿
+                    if(aplayerItem.paused) {
+                      VolantisApp.message('音乐通知', title + ' - ' + artist, {
+                        icon: 'fa-solid fa-pause',
+                        transitionIn: 'flipInX',
+                        transitionOut: 'flipOutX'
+                      });
+                    }
+                  }, 100)
+                });
+              }
+            });
+          }, 500)
+        } catch (error) { console.error(error); }
+      
+    }else{
+      volantis.requestAnimationFrame(SetAPlayerPlugin)
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", ()=>{
+    SetAPlayerPlugin();
+  });
+  volantis.pjax.push(SetAPlayerPlugin);
+</script>
 
 
 
@@ -3296,6 +4032,25 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
+  
+<script src="https://unpkg.com/volantis-static@0.0.1649552113628/libs/node-waves/dist/waves.min.js"></script>
+
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function () {
+  Waves.attach('.flat-btn', ['waves-button']);
+  Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+  Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+  Waves.attach('.flat-box', ['waves-block']);
+  Waves.attach('.float-box', ['waves-block', 'waves-float']);
+  Waves.attach('.waves-image');
+  Waves.init();
+});
+</script>
+
+
+
+  
+<script src="https://unpkg.com/volantis-static@0.0.1649552113628/libs/comment_typing/comment_typing.js"></script>
 
 
 
@@ -3323,6 +4078,61 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
+
+
+  <script>
+  let imgs = ["https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/054.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/005.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/002.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/033.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/035.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/039.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/006.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/046.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/012.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/001.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/019.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/004.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/025.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/051.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/016.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/052.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/056.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/034.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/038.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/042.webp","https://unpkg.com/volantis-static@0.0.1649552113628/media/wallpaper/minimalist/2020/003.webp"];
+  let index = 0;
+  let IntervalParallax = null;
+
+  function parallax(){
+    let ParallaxWindow = document.querySelector("#parallax-window");
+    
+    Parallax.window = ParallaxWindow;
+    Parallax.options.fade = 1500;
+    Parallax.cache = 1;
+    next_parallax();
+    Parallax.init();
+    if (imgs.length>1) {
+      IntervalParallax = setInterval(function () {
+        next_parallax();
+      }, '10000');
+    }
+  }
+
+  function next_parallax() {
+    if (typeof Parallax == "undefined") {
+      return
+    }
+    
+      if (!document.querySelector("#full")&&!document.querySelector("#half")) {
+        return
+      }
+    
+    if (imgs.length>=1) {
+      Parallax.options.src = imgs[index % imgs.length];
+      Parallax.start();
+      index++;
+      if (Parallax.cache) {
+        fetch(imgs[index % imgs.length] +"?t=" + new Date().getTime());
+        if (index == imgs.length) {
+          Parallax.cache = 0;
+        }
+      }
+    }
+  }
+  var runningOnBrowser = typeof window !== "undefined";
+  var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+  if (!isBot) {
+    volantis.js('/js/plugins/parallax.8bf0ab10.js').then(()=>{
+      parallax()
+    })
+    volantis.pjax.send(()=>{
+      clearInterval(IntervalParallax)
+    },"clearIntervalParallax");
+    volantis.pjax.push(parallax);
+  }
+</script>
 
 
 
