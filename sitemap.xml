@@ -151,7 +151,7 @@
   </url>
   
   <url>
-    <loc>https://muyanglarry.github.io/tags/Welcome/</loc>
+    <loc>https://muyanglarry.github.io/tags/Windows/</loc>
     <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -159,13 +159,6 @@
   
   <url>
     <loc>https://muyanglarry.github.io/tags/Essay/</loc>
-    <lastmod>2022-06-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://muyanglarry.github.io/tags/Windows/</loc>
     <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -185,17 +178,17 @@
     <priority>0.2</priority>
   </url>
   
-
-  
   <url>
-    <loc>https://muyanglarry.github.io/categories/Software/</loc>
+    <loc>https://muyanglarry.github.io/tags/Welcome/</loc>
     <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
+
+  
   <url>
-    <loc>https://muyanglarry.github.io/categories/Others/</loc>
+    <loc>https://muyanglarry.github.io/categories/Software/</loc>
     <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -210,6 +203,13 @@
   
   <url>
     <loc>https://muyanglarry.github.io/categories/Technology/</loc>
+    <lastmod>2022-06-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://muyanglarry.github.io/categories/Others/</loc>
     <lastmod>2022-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
