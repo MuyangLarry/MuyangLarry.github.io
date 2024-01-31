@@ -905,14 +905,14 @@ button {
   }
 }
 @font-face {
-  font-family: 'Microsoft YaHei';
+  font-family: 'Arial';
   src: url("https://unpkg.com/volantis-static@0.0.1649552113628/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
 @font-face {
-  font-family: 'Microsoft YaHei';
+  font-family: 'Arial';
   src: url("https://unpkg.com/volantis-static@0.0.1649552113628/media/fonts/VarelaRound/VarelaRound-Regular.ttf");
   font-weight: 'normal';
   font-style: 'normal';
