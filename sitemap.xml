@@ -137,21 +137,14 @@
 
   
   <url>
+    <loc>https://muyanglarry.github.io/tags/Channel-video-manuscript/</loc>
+    <lastmod>2024-01-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://muyanglarry.github.io/tags/Software-testing-and-evaluation/</loc>
-    <lastmod>2024-01-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://muyanglarry.github.io/tags/Windows/</loc>
-    <lastmod>2024-01-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://muyanglarry.github.io/tags/Essay/</loc>
     <lastmod>2024-01-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -165,7 +158,14 @@
   </url>
   
   <url>
-    <loc>https://muyanglarry.github.io/tags/Channel-video-manuscript/</loc>
+    <loc>https://muyanglarry.github.io/tags/Essay/</loc>
+    <lastmod>2024-01-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://muyanglarry.github.io/tags/Windows/</loc>
     <lastmod>2024-01-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -188,7 +188,7 @@
 
   
   <url>
-    <loc>https://muyanglarry.github.io/categories/Numerical-code/</loc>
+    <loc>https://muyanglarry.github.io/categories/Software/</loc>
     <lastmod>2024-01-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -202,7 +202,7 @@
   </url>
   
   <url>
-    <loc>https://muyanglarry.github.io/categories/Software/</loc>
+    <loc>https://muyanglarry.github.io/categories/Numerical-code/</loc>
     <lastmod>2024-01-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
