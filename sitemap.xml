@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://muyanglarry.github.io/wiki/</loc>
+    
+    <lastmod>2024-05-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://muyanglarry.github.io/friends/</loc>
     
     <lastmod>2024-05-03</lastmod>
@@ -12,15 +21,6 @@
   
   <url>
     <loc>https://muyanglarry.github.io/explore/</loc>
-    
-    <lastmod>2024-05-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://muyanglarry.github.io/wiki/</loc>
     
     <lastmod>2024-05-03</lastmod>
     
@@ -173,20 +173,6 @@
 
   
   <url>
-    <loc>https://muyanglarry.github.io/tags/Channel-video-manuscript/</loc>
-    <lastmod>2024-05-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://muyanglarry.github.io/tags/Software-testing-and-evaluation/</loc>
-    <lastmod>2024-05-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://muyanglarry.github.io/tags/Welcome/</loc>
     <lastmod>2024-05-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -195,6 +181,20 @@
   
   <url>
     <loc>https://muyanglarry.github.io/tags/Essay/</loc>
+    <lastmod>2024-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://muyanglarry.github.io/tags/Channel-video-manuscript/</loc>
+    <lastmod>2024-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://muyanglarry.github.io/tags/Software-testing-and-evaluation/</loc>
     <lastmod>2024-05-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -224,14 +224,14 @@
 
   
   <url>
-    <loc>https://muyanglarry.github.io/categories/Software/</loc>
+    <loc>https://muyanglarry.github.io/categories/Others/</loc>
     <lastmod>2024-05-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://muyanglarry.github.io/categories/Others/</loc>
+    <loc>https://muyanglarry.github.io/categories/Software/</loc>
     <lastmod>2024-05-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
