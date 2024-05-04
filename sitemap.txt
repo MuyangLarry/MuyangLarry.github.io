@@ -1,5 +1,6 @@
-https://muyanglarry.github.io/wiki/
+https://muyanglarry.github.io/about/
 https://muyanglarry.github.io/friends/
+https://muyanglarry.github.io/wiki/
 https://muyanglarry.github.io/explore/
 https://muyanglarry.github.io/2024/05/02/Test/
 https://muyanglarry.github.io/2022/04/23/README/
@@ -10,7 +11,6 @@ https://muyanglarry.github.io/2022/04/24/%E8%8A%AF%E7%89%87/
 https://muyanglarry.github.io/2022/04/24/%E5%B0%8F%E7%B1%B3%E6%89%8B%E7%8E%AF6/
 https://muyanglarry.github.io/2022/04/24/%E5%B0%8F%E7%B1%B36/
 https://muyanglarry.github.io/2022/04/24/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/
-https://muyanglarry.github.io/about/
 https://muyanglarry.github.io/tags/
 https://muyanglarry.github.io/categories/
 https://muyanglarry.github.io/schedule/
@@ -21,8 +21,8 @@ https://muyanglarry.github.io/tags/Welcome/
 https://muyanglarry.github.io/tags/Essay/
 https://muyanglarry.github.io/tags/Channel-video-manuscript/
 https://muyanglarry.github.io/tags/Software-testing-and-evaluation/
-https://muyanglarry.github.io/tags/Measurement-of-the-hardware/
 https://muyanglarry.github.io/tags/Windows/
+https://muyanglarry.github.io/tags/Measurement-of-the-hardware/
 https://muyanglarry.github.io/tags/Hardcore-science/
 https://muyanglarry.github.io/categories/Others/
 https://muyanglarry.github.io/categories/Software/
