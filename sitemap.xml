@@ -201,13 +201,6 @@
   </url>
   
   <url>
-    <loc>https://muyanglarry.github.io/tags/Windows/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://muyanglarry.github.io/tags/Tags/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -216,6 +209,13 @@
   
   <url>
     <loc>https://muyanglarry.github.io/tags/Measurement-of-the-hardware/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://muyanglarry.github.io/tags/Windows/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
